@@ -1,0 +1,12 @@
+[package]
+name = "mre-issue-higher-ranked"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+diesel = { version = "2.1.4", features = ["postgres"] }
+diesel-async = "0.4.1"
+rocket = "0.5.0"
+rocket_db_pools = { version = "0.1.0", features = ["diesel", "diesel_postgres"] }
